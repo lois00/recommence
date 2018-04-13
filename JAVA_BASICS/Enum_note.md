@@ -23,12 +23,15 @@ class EnumOne
 上例中AccountType变成了个class AccountType，并且会生成一个新的构造函数，若原来有构造函数，则在此基础上<br>
 添加两个参数，生成新的构造函数，如上例子中：<br>
 ```
-private AccountType(){ System.out.println(“It is a account type”); }
+private AccountType(){ 
+    System.out.println(“It is a account type”);
+}
 ```
 会变成：
 ```
 private AccountType(String s, int i){
-    super(s,i); System.out.println(“It is a account type”);
+    super(s,i); 
+    System.out.println(“It is a account type”);
 }
 ```
 而在这个类中，会添加若干字段来代表具体的枚举类型：
