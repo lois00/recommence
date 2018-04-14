@@ -1,6 +1,7 @@
 并发与并行的差别：  
-一、图形示意:  
+一、图形示意:    
 并行  
-![Concurrency](C:\Users\Administrator\Desktop\Concurrency.gif)   
+![Concurrency](https://github.com/lois00/recommence/blob/master/OPERATING_SYSTEM/PIC/Concurrency.gif)    
 并发  
-![Parallelism](C:\Users\Administrator\Desktop\Parallelism.gif)
+![Parallelism](https://github.com/lois00/recommence/blob/master/OPERATING_SYSTEM/PIC/Parallelism.gif)  
+
