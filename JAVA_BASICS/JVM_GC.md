@@ -9,13 +9,13 @@
 
 # 二、典型垃圾收集算法  
 ## 1、标记-清除法  
-![标记-清除法]()
+![标记-清除法](https://github.com/lois00/recommence/blob/master/JAVA_BASICS/PIC/Mark-Sweep.png)
 ## 2、复制法  
-![复制法]()
+![复制法](https://github.com/lois00/recommence/blob/master/JAVA_BASICS/PIC/Copying.png)
 ## 3、标记-整理法  
-![标记-整理法]()
+![标记-整理法](https://github.com/lois00/recommence/blob/master/JAVA_BASICS/PIC/Mark-Compact.png)
 ## 4、分代收集法  
-![分代收集法]()
+![分代收集法](https://github.com/lois00/recommence/blob/master/JAVA_BASICS/PIC/Mark-Sweep.png)
 
 # 三、典型垃圾收集算法   
 
