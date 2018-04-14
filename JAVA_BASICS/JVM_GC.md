@@ -23,9 +23,9 @@
 ## 4、分代收集法   
 **分代收集算法是目前大部分JVM的垃圾收集器采用的算法**。它的核心思想是根据对象存活的生命周期将内存划分为若干个不同的区域。一般情况下将堆区划分为**老年代（Tenured Generation）和新生代（Young Generation）**，老年代的特点是每次垃圾收集时只有少量对象需要被回收，而新生代的特点是每次垃圾回收时都有大量的对象需要被回收，那么就可以根据不同代的特点采取最适合的收集算法。  
 目前大部分垃圾收集器对于**新生代都采取Copying算法**，因为新生代中每次垃圾回收都要回收大部分对象，也就是说需要复制的操作次数较少，但是实际中并不是按照1：1的比例来划分新生代的空间的，一般来说是将新生代划分为一块较大的Eden空间和两块较小的Survivor空间，每次使用Eden空间和其中的一块Survivor空间，当进行回收时，将Eden和Survivor中还存活的对象复制到另一块Survivor空间中，然后清理掉Eden和刚才使用过的Survivor空间。  
-而由于**老年代**的特点是每次回收都只回收少量对象，**一般使用的是Mark-Compact算法**。　　
+而由于**老年代**的特点是每次回收都只回收少量对象，**一般使用的是Mark-Compact算法**。   
 注意，在堆区之外还有一个代就是**永久代（Permanet Generation）**，它用来存储class类、常量、方法描述等。对永久代的回收主要回收两部分内容：废弃常量和无用的类。
-![分代收集法](https://github.com/lois00/recommence/blob/master/JAVA_BASICS/PIC/Mark-Sweep.png)
+![分代收集法](https://github.com/lois00/recommence/blob/master/JAVA_BASICS/PIC/generations.png)
 
 # 三、典型垃圾收集算法   
 
