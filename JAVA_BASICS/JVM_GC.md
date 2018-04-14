@@ -28,5 +28,24 @@
 ![分代收集法](https://github.com/lois00/recommence/blob/master/JAVA_BASICS/PIC/generations.png)
 
 # 三、典型垃圾收集算法   
+## 1、Serial/Serial Old  
+单线程收集器，GC时必须暂停所有用户线程。     
+Serial —— 新生代收集器，采用复制法。     
+Serial Old —— 老年代收集器，采用标记-整理法。  
+
+## 2、ParNew     
+多线程收集器，Serial多线程版本。    
+ 
+## 3、Parallel Scavenge  
+新生代多线程并行收集器，采用复制法。  
+
+## 4、Parallel Old  
+老年代多线程并#行收集器，采用标记-整理法。 
+
+## 5、CMS  
+以获取最短回收停顿时间为目标，并发收集器，采用标记-整理法。  
+
+## 6、G1  
+并行与并发收集器。
 
 
