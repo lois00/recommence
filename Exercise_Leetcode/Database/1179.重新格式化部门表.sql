@@ -43,6 +43,7 @@ Department 表：
 注意，结果表有 13 列 (1个部门 id 列 + 12个月份的收入列)。
 
 
+Solutions:
 一：我的愚笨解法
 ```
 SELECT d.id
