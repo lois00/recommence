@@ -10,7 +10,7 @@
 输出：["abc","acb","bac","bca","cab","cba"]
 ```
  
-限制：
+限制：<br>
 1 <= s 的长度 <= 8
 
 ## Solutions:
